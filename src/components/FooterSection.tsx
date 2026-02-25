@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail } from "lucide-react";
+import nexaurLogo from "@/assets/nexaur-logo.png";
 
 const FooterSection = () => {
   return (
@@ -13,8 +14,7 @@ const FooterSection = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-2xl font-bold tracking-tighter gradient-text font-mono">NEXAUR</span>
-              <span className="text-2xl font-light tracking-widest text-foreground/60">TRADING</span>
+              <img src={nexaurLogo} alt="Nexaur Trading" className="h-8 w-auto invert" />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               Proprietary algorithmic trading firm specialising in high-frequency, 

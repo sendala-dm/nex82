@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroVideo from "@/assets/hero-video.mp4";
+import nexaurLogo from "@/assets/nexaur-logo.png";
 
 const HeroSection = () => {
   return (
@@ -30,14 +31,7 @@ const HeroSection = () => {
         >
           {/* Logo placeholder - user will upload */}
           <div className="mb-8 flex justify-center">
-            <div className="h-16 w-auto flex items-center gap-3">
-              <span className="text-4xl font-bold tracking-tighter gradient-text font-mono">
-                NEXAUR
-              </span>
-              <span className="text-4xl font-light tracking-widest text-foreground/80">
-                TRADING
-              </span>
-            </div>
+            <img src={nexaurLogo} alt="Nexaur Trading" className="h-16 w-auto invert" />
           </div>
         </motion.div>
 
