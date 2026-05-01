@@ -50,9 +50,6 @@ const FooterSection = () => {
           <p className="text-xs text-muted-foreground font-mono">
             © {new Date().getFullYear()} NEX|82. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground font-mono">
-            Proprietary Capital · No External Clients
-          </p>
         </div>
       </div>
     </footer>
