@@ -5,7 +5,7 @@ import nexaurLogo from "@/assets/nexaur-logo.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 md:pb-0">
       {/* Video Background */}
       <video
         autoPlay
