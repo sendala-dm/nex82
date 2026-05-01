@@ -4,7 +4,7 @@ const stats = [
   { value: "< 1ms", label: "Execution Latency" },
   { value: "24/7", label: "Market Coverage" },
   { value: "100%", label: "Proprietary Capital" },
-  { value: "AI", label: "Decision Engine" },
+  { value: "ML", label: "Decision Engine" },
 ];
 
 const TechnologySection = () => {
