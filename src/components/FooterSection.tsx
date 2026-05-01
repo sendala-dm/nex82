@@ -18,7 +18,7 @@ const FooterSection = () => {
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               Proprietary algorithmic trading firm specialising in high-frequency, 
-              AI-driven strategies across global markets.
+              machine learning-driven strategies across global markets.
             </p>
           </motion.div>
 

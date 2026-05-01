@@ -52,7 +52,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-light"
         >
-          High-frequency, AI-driven automated trading across FX, Energy, 
+          High-frequency, machine learning-driven automated trading across FX, Energy, 
           Commodities & Crypto. Proprietary capital. Zero clients. Pure alpha.
         </motion.p>
 
