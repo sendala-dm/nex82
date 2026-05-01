@@ -35,7 +35,8 @@ const FooterSection = () => {
               <MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" />
               <span>
                 NEX|82<br />
-                London, United Kingdom
+                London,<br />
+                United Kingdom
               </span>
             </div>
             <div className="flex items-center gap-3 text-sm text-muted-foreground">
@@ -48,7 +49,7 @@ const FooterSection = () => {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground font-mono">
-            © {new Date().getFullYear()} NEX|82. All rights reserved.
+            © {new Date().getFullYear()} NEX|82 All rights reserved.
           </p>
         </div>
       </div>
