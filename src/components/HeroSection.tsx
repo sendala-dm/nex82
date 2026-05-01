@@ -5,7 +5,7 @@ import nexaurLogo from "@/assets/nexaur-logo.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 md:pb-0">
       {/* Video Background */}
       <video
         autoPlay
@@ -85,13 +85,13 @@ const HeroSection = () => {
           y: { delay: 1.2, duration: 1.8, repeat: Infinity, ease: "easeInOut" },
         }}
         aria-label="Scroll to next section"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 group"
+        className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 md:gap-2 group z-20"
       >
-        <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground group-hover:text-primary transition-colors">
+        <span className="font-mono text-[10px] md:text-xs tracking-[0.3em] text-muted-foreground group-hover:text-primary transition-colors">
           SCROLL
         </span>
-        <div className="w-px h-12 bg-gradient-to-b from-primary/60 to-transparent" />
-        <ChevronDown className="h-5 w-5 text-primary animate-pulse-glow" />
+        <div className="w-px h-6 md:h-12 bg-gradient-to-b from-primary/60 to-transparent" />
+        <ChevronDown className="h-4 w-4 md:h-5 md:w-5 text-primary animate-pulse-glow" />
       </motion.button>
     </section>
   );
