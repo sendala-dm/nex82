@@ -31,7 +31,7 @@ const HeroSection = () => {
         >
           {/* Logo placeholder - user will upload */}
           <div className="mb-8 flex justify-center">
-            <img src={nexaurLogo} alt="Nexaur Trading" className="h-16 w-auto invert" />
+            <img src={nexaurLogo} alt="NEX|82" className="h-20 md:h-24 w-auto" />
           </div>
         </motion.div>
 

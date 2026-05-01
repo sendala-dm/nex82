@@ -14,7 +14,7 @@ const FooterSection = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <img src={nexaurLogo} alt="Nexaur Trading" className="h-8 w-auto invert" />
+              <img src={nexaurLogo} alt="NEX|82" className="h-10 w-auto" />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               Proprietary algorithmic trading firm specialising in high-frequency, 
@@ -34,13 +34,13 @@ const FooterSection = () => {
             <div className="flex items-start gap-3 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" />
               <span>
-                Nexaur Trading Ltd<br />
+                NEX|82<br />
                 London, United Kingdom
               </span>
             </div>
             <div className="flex items-center gap-3 text-sm text-muted-foreground">
               <Mail className="h-4 w-4 text-primary shrink-0" />
-              <span>info@nexaur.com</span>
+              <span>info@nex82.com</span>
             </div>
           </motion.div>
         </div>
@@ -48,7 +48,7 @@ const FooterSection = () => {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground font-mono">
-            © {new Date().getFullYear()} Nexaur Trading Ltd. All rights reserved.
+            © {new Date().getFullYear()} NEX|82. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground font-mono">
             Proprietary Capital · No External Clients
