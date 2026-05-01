@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import heroVideo from "@/assets/hero-video.mp4";
 import nexaurLogo from "@/assets/nexaur-logo.png";
 
@@ -71,15 +72,27 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Bottom fade scroll indicator */}
-      <motion.div
+      {/* Scroll indicator */}
+      <motion.button
+        type="button"
+        onClick={() =>
+          window.scrollBy({ top: window.innerHeight, behavior: "smooth" })
+        }
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        animate={{ opacity: 1, y: [0, 8, 0] }}
+        transition={{
+          opacity: { delay: 1.2, duration: 0.8 },
+          y: { delay: 1.2, duration: 1.8, repeat: Infinity, ease: "easeInOut" },
+        }}
+        aria-label="Scroll to next section"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 group"
       >
-        <div className="w-px h-16 bg-gradient-to-b from-primary/50 to-transparent animate-pulse-glow" />
-      </motion.div>
+        <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground group-hover:text-primary transition-colors">
+          SCROLL
+        </span>
+        <div className="w-px h-12 bg-gradient-to-b from-primary/60 to-transparent" />
+        <ChevronDown className="h-5 w-5 text-primary animate-pulse-glow" />
+      </motion.button>
     </section>
   );
 };
