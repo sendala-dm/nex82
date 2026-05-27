@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { label: "Home", to: "/" },
   { label: "About", to: "/about" },
-  { label: "Software", to: "/software" },
+  { label: "Careers", to: "/careers" },
+  { label: "Home", to: "/" },
   { label: "Infrastructure", to: "/infrastructure" },
+  { label: "Software", to: "/software" },
 ];
 
 const TopNav = () => {
