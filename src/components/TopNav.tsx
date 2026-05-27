@@ -35,11 +35,12 @@ const TopNav = () => {
                 )}
               >
                 {item.icon ? (
-                  <img
-                    src="/favicon.ico"
-                    alt="Home"
-                    className="h-3.5 w-3.5 object-contain"
-                  />
+                  <span
+                    aria-label="Home"
+                    className="font-sans font-bold text-sm leading-none tracking-normal"
+                  >
+                    N
+                  </span>
                 ) : (
                   item.label
                 )}
