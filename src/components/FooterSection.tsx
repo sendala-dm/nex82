@@ -33,7 +33,7 @@ const FooterSection = () => {
             <div className="flex items-start gap-3 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" />
               <span>
-                NEX|82<br />
+                NEX82 LLC<br />
                 777 West Putnam Avenue,<br />
                 Greenwich CT
               </span>
