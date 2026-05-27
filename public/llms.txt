@@ -1,0 +1,21 @@
+# NEX|82
+
+> Proprietary, self-funded algorithmic trading firm. AI-driven strategies across FX, energy, commodities and crypto. 25+ years of machine-based algo trading experience.
+
+NEX|82 (also known as Nexaur) is a proprietary, self-funded high-frequency trading firm with over 25 years of experience in machine-based algorithmic trading. Founded in 2004, the firm began in bond arbitrage before expanding into FX ECNs, energy, commodities and digital assets. The company is entirely independent — no external investors, no clients, no conflicts — deploying proprietary capital with full conviction in its technology.
+
+The firm operates a lean team where 99.9% of the business is automated, managing trading and global risk around the clock through a proprietary hardware and software stack built from the ground up.
+
+## Pages
+
+- [/](/): Home — Algorithmic intelligence. High-frequency, machine learning-driven automated trading across FX, energy, commodities and crypto.
+- [/about](/about): Firm history from 2004 through bond arbitrage, high-frequency bond arb, FX ECNs and the low-latency era to today's global stack.
+- [/careers](/careers): Open recruitment for sharp-minded individuals with backgrounds in algo trading. Real-world experience championed over formal degrees.
+- [/contact](/contact): Remote-first since 2006. Headquartered in the United States with presence across all three continents.
+- [/hardware](/hardware): Proprietary hardware infrastructure — Arista switching, custom server design, exchange colocation, microwave links (including Chicago) and adoption of the latest network standards.
+- [/infrastructure](/infrastructure): Global points of presence — London, New York, Chicago, Iceland, Tokyo, Hong Kong and Singapore — with a live network map showing interconnects.
+- [/software](/software): Software-first approach to low-latency trading. Custom ML engines, Go, Python, Java, Kafka, ClickHouse and PostgreSQL.
+
+## Optional
+
+- Email: info@nex82.com
