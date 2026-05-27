@@ -51,9 +51,9 @@ const About = () => {
             className="text-center mb-16"
           >
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-              Our history is rooted deeply in ECNs since the early days of the Island ECN in 2004.
-              With a background in high-frequency latency arbitrage since 2004 — initially in bond markets
-              (EU Bund/Bobl/Schatz vs US Treasuries) — we later moved into FX arbitrage.
+              Our history began in 2004 with bond arbitrage — EU Bund/Bobl/Schatz vs US Treasuries.
+              By 2006 we were running high-frequency bond arb, and in 2009 we moved into FX ECNs
+              and the beginnings of our low-latency world.
             </p>
           </motion.div>
 
