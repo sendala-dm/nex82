@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 
@@ -56,6 +56,18 @@ const extraLinks: Array<[string, string]> = [
 ];
 
 const Infrastructure = () => {
+  useEffect(() => {
+    document.title = "Infrastructure | NEX|82 Global POPs";
+    const desc = "NEX|82 global infrastructure footprint: low-latency points of presence across London, New York, Chicago, Iceland, Tokyo, Hong Kong and Singapore.";
+    let tag = document.querySelector('meta[name="description"]');
+    if (!tag) {
+      tag = document.createElement("meta");
+      tag.setAttribute("name", "description");
+      document.head.appendChild(tag);
+    }
+    tag.setAttribute("content", desc);
+  }, []);
+
   // Dot grid background (sparse) for terminal aesthetic
   const cols = 60;
   const rows = 30;
@@ -81,15 +93,6 @@ const Infrastructure = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Infrastructure | NEX|82 Global POPs</title>
-        <meta
-          name="description"
-          content="NEX|82 global infrastructure footprint: low-latency points of presence across London, New York, Chicago, Iceland, Tokyo, Hong Kong and Singapore."
-        />
-        <link rel="canonical" href="/infrastructure" />
-      </Helmet>
-
       <TopNav />
 
       <section className="relative pt-28 md:pt-32 pb-20">
