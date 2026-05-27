@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import { geoNaturalEarth1, geoPath, geoInterpolate, geoGraticule10 } from "d3-geo";
 import { feature } from "topojson-client";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import worldData from "world-atlas/countries-110m.json";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 
@@ -68,17 +69,11 @@ const extraLinks: Array<[string, string]> = [
 ];
 
 const Infrastructure = () => {
-  useEffect(() => {
-    document.title = "Infrastructure | NEX|82 Global POPs";
-    const desc = "NEX|82 global infrastructure footprint: low-latency points of presence across London, New York, Chicago, Iceland, Tokyo, Hong Kong and Singapore.";
-    let tag = document.querySelector('meta[name="description"]');
-    if (!tag) {
-      tag = document.createElement("meta");
-      tag.setAttribute("name", "description");
-      document.head.appendChild(tag);
-    }
-    tag.setAttribute("content", desc);
-  }, []);
+  usePageMeta({
+    title: "Infrastructure — NEX|82",
+    description: "NEX|82 global infrastructure footprint: low-latency points of presence across London, New York, Chicago, Iceland, Tokyo, Hong Kong and Singapore.",
+    canonicalPath: "/infrastructure",
+  });
 
   const { countryPaths, graticulePath, sphereOutline } = useMemo(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

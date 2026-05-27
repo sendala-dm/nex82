@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 
@@ -12,11 +12,11 @@ const milestones = [
 ];
 
 const About = () => {
-  useEffect(() => {
-    document.title = "About — NEX|82";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "NEX|82 — Our history in electronic trading, ECNs, and low-latency infrastructure since 2004.");
-  }, []);
+  usePageMeta({
+    title: "About — NEX|82",
+    description: "NEX|82 — Our history in electronic trading, ECNs, and low-latency infrastructure since 2004.",
+    canonicalPath: "/about",
+  });
 
   return (
     <div className="min-h-screen bg-background">

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 
@@ -14,11 +14,11 @@ const techStack = [
 ];
 
 const Software = () => {
-  useEffect(() => {
-    document.title = "Software — NEX|82";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "NEX|82 — Our software-first approach to low-latency trading, built from the ground up.");
-  }, []);
+  usePageMeta({
+    title: "Software — NEX|82",
+    description: "NEX|82 — Our software-first approach to low-latency trading, built from the ground up.",
+    canonicalPath: "/software",
+  });
 
   return (
     <div className="min-h-screen bg-background">

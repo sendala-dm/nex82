@@ -1,21 +1,15 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 import HardwareSection from "@/components/HardwareSection";
 
 const Hardware = () => {
-  useEffect(() => {
-    document.title = "Hardware | NEX|82";
-    const desc = "NEX|82 proprietary hardware infrastructure — Arista networks, custom servers, microwave links, and exchange colocation.";
-    let tag = document.querySelector('meta[name="description"]');
-    if (!tag) {
-      tag = document.createElement("meta");
-      tag.setAttribute("name", "description");
-      document.head.appendChild(tag);
-    }
-    tag.setAttribute("content", desc);
-  }, []);
+  usePageMeta({
+    title: "Hardware — NEX|82",
+    description: "NEX|82 proprietary hardware infrastructure — Arista networks, custom servers, microwave links, and exchange colocation.",
+    canonicalPath: "/hardware",
+  });
 
   return (
     <div className="min-h-screen bg-background">
