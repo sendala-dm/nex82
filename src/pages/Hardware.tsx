@@ -27,7 +27,7 @@ const Hardware = () => {
           >
             <div className="flex items-center gap-3 mb-5 font-mono text-[11px] tracking-[0.25em] text-muted-foreground uppercase">
               <span className="h-px w-8 bg-primary/60" />
-              Infrastructure
+              Hardware
             </div>
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-5 text-foreground">
               Hardware at the <span className="gradient-text">Speed of Physics</span>
