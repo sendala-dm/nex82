@@ -15,7 +15,7 @@ const Hardware = () => {
     <div className="min-h-screen bg-background">
       <TopNav />
 
-      <section className="relative pt-28 md:pt-32 pb-20">
+      <section className="relative pt-28 md:pt-32 pb-10">
         <div className="absolute inset-0 grid-pattern opacity-[0.06] pointer-events-none" />
 
         <div className="relative container mx-auto px-6">
