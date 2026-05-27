@@ -87,7 +87,7 @@ const HeroSection = () => {
         aria-label="Scroll to next section"
         className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 md:gap-2 group z-20"
       >
-        <span className="font-mono text-[10px] md:text-xs tracking-[0.3em] text-muted-foreground group-hover:text-primary transition-colors">
+        <span className="font-mono text-[10px] md:text-xs tracking-[0.3em] text-muted-foreground group-hover:text-primary transition-colors ml-[0.3em]">
           SCROLL
         </span>
         <div className="w-px h-6 md:h-12 bg-gradient-to-b from-primary/60 to-transparent" />
