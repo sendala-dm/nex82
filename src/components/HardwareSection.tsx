@@ -42,7 +42,7 @@ const features = [
 
 const HardwareSection = () => {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-10" />
 
       <div className="container mx-auto px-6 relative z-10">
