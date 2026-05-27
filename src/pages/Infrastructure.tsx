@@ -81,12 +81,9 @@ const Infrastructure = () => {
   }, []);
 
   const { countryPaths, graticulePath, sphereOutline } = useMemo(() => {
-    const topo = worldData as unknown as Parameters<typeof feature>[0];
-    const land = feature(
-      topo,
-      // @ts-expect-error topology objects typed loosely
-      topo.objects.countries,
-    ) as FeatureCollection<Geometry>;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const topo = worldData as any;
+    const land = feature(topo, topo.objects.countries) as unknown as FeatureCollection<Geometry>;
     const paths = land.features
       .map((f: Feature<Geometry>) => pathGen(f) ?? "")
       .filter(Boolean);
