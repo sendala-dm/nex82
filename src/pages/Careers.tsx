@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 
 const Careers = () => {
+  const [email, setEmail] = useState("");
+
   useEffect(() => {
     document.title = "Careers — NEX|82";
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", "NEX|82 — Join our lean team. We champion real-world experience in algo trading.");
+
+    const parts = ["info", "@", "nex", "82", ".", "com"];
+    setEmail(parts.join(""));
   }, []);
 
   return (
@@ -78,13 +83,23 @@ const Careers = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55 }}
-            className="mt-20 flex items-center justify-center gap-4"
+            className="mt-20 flex flex-col items-center gap-4"
           >
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary/30" />
-            <span className="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground">
-              Get In Touch
-            </span>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary/30" />
+            <div className="flex items-center gap-4">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary/30" />
+              <span className="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground">
+                Get In Touch
+              </span>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary/30" />
+            </div>
+            {email && (
+              <a
+                href={`mailto:${email}`}
+                className="font-mono text-sm text-primary hover:text-primary/80 transition-colors"
+              >
+                {email}
+              </a>
+            )}
           </motion.div>
         </div>
       </section>
