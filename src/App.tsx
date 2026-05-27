@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Infrastructure from "./pages/Infrastructure";
 import Software from "./pages/Software";
+import Hardware from "./pages/Hardware";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/software" element={<Software />} />
           <Route path="/infrastructure" element={<Infrastructure />} />
+          <Route path="/hardware" element={<Hardware />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
