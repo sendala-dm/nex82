@@ -1,20 +1,19 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    document.title = "Contact — NEX|82";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "NEX|82 — Get in touch. Headquartered in the US with presence across three continents."
-      );
+  usePageMeta({
+    title: "Contact — NEX|82",
+    description: "NEX|82 — Get in touch. Headquartered in the US with presence across three continents.",
+    canonicalPath: "/contact",
+  });
 
+  useEffect(() => {
     const parts = ["info", "@", "nex", "82", ".", "com"];
     setEmail(parts.join(""));
   }, []);

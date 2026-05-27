@@ -1,16 +1,19 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 
 const Careers = () => {
   const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    document.title = "Careers — NEX|82";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "NEX|82 — Join our lean team. We champion real-world experience in algo trading.");
+  usePageMeta({
+    title: "Careers — NEX|82",
+    description: "NEX|82 — Join our lean team. We champion real-world experience in algo trading.",
+    canonicalPath: "/careers",
+  });
 
+  useEffect(() => {
     const parts = ["info", "@", "nex", "82", ".", "com"];
     setEmail(parts.join(""));
   }, []);
