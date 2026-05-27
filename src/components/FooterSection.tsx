@@ -12,12 +12,11 @@ const FooterSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="flex items-center gap-6"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <img src={nexaurLogo} alt="NEX|82" className="h-10 w-auto" />
-            </div>
+            <img src={nexaurLogo} alt="NEX|82" className="h-10 w-auto shrink-0" />
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-              Proprietary algorithmic trading firm specialising in high-frequency, 
+              Proprietary algorithmic trading firm specialising in high-frequency,
               machine learning-driven strategies across global markets.
             </p>
           </motion.div>
