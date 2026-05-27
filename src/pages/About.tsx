@@ -4,11 +4,10 @@ import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
 
 const milestones = [
-  { year: "2004", label: "ECN Origins", desc: "Roots in the Island ECN era — early electronic trading infrastructure." },
-  { year: "2004+", label: "Latency Arb", desc: "High-frequency latency arbitrage in bond markets — EU Bund/Bobl/Schatz vs US Treasuries." },
-  { year: "2010s", label: "FX Arbitrage", desc: "Transitioned into FX arbitrage with deep expertise in cross-market pricing." },
-  { year: "2010s", label: "Spread Networks", desc: "Among the first users of Spread Networks and colocation at Chicago CH1 / CME Aurora." },
-  { year: "2010s", label: "Microwave Links", desc: "Pioneer adopters of microwave technology for lowest-latency market data." },
+  { year: "2004", label: "Bond Arb", desc: "Began in bond arbitrage — early electronic trading in EU Bund/Bobl/Schatz vs US Treasuries." },
+  { year: "2006", label: "HF Bond Arb", desc: "High-frequency latency arbitrage in bond markets, pushing the boundaries of execution speed." },
+  { year: "2009", label: "FX ECN", desc: "Transitioned into FX arbitrage and ECN development — the beginnings of our low-latency world." },
+  { year: "2009–2012", label: "Low Latency Era", desc: "Among the first users of Spread Networks, colocation at Chicago CH1 / CME Aurora, and microwave links." },
   { year: "Today", label: "Global Stack", desc: "25+ years of machine-based algo trading. ECN technology still powering global prime brokers." },
 ];
 
@@ -52,9 +51,9 @@ const About = () => {
             className="text-center mb-16"
           >
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-              Our history is rooted deeply in ECNs since the early days of the Island ECN in 2004.
-              With a background in high-frequency latency arbitrage since 2004 — initially in bond markets
-              (EU Bund/Bobl/Schatz vs US Treasuries) — we later moved into FX arbitrage.
+              Our history began in 2004 with bond arbitrage — EU Bund/Bobl/Schatz vs US Treasuries.
+              By 2006 we were running high-frequency bond arb, and in 2009 we moved into FX ECNs
+              and the beginnings of our low-latency world.
             </p>
           </motion.div>
 
