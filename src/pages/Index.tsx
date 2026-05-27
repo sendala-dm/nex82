@@ -12,6 +12,7 @@ const Index = () => {
       <HeroSection />
       <AssetClassSection />
       <TechnologySection />
+      <HardwareSection />
       <FooterSection />
     </div>
   );
