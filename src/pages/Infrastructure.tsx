@@ -139,6 +139,11 @@ const Infrastructure = () => {
             </p>
           </motion.div>
 
+          <h2 className="font-mono text-xs tracking-[0.25em] uppercase text-muted-foreground mb-6 flex items-center gap-3">
+            <span className="h-px w-8 bg-primary/40" />
+            Global Network Map
+          </h2>
+
           {/* Map */}
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
@@ -290,6 +295,11 @@ const Infrastructure = () => {
               </g>
             </svg>
           </motion.div>
+
+          <h2 className="font-mono text-xs tracking-[0.25em] uppercase text-muted-foreground mt-16 mb-6 flex items-center gap-3">
+            <span className="h-px w-8 bg-primary/40" />
+            Points of Presence
+          </h2>
 
           {/* POP list */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-px mt-12 border border-border/60 bg-border/60">

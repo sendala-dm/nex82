@@ -36,6 +36,9 @@ const Contact = () => {
               </span>
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
             </div>
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-center mb-6 text-foreground">
+              Get in <span className="gradient-text">Touch</span>
+            </h1>
           </motion.div>
 
           <motion.div
