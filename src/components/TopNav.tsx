@@ -28,13 +28,21 @@ const TopNav = () => {
               <Link
                 to={item.to}
                 className={cn(
-                  "px-3 py-1.5 rounded-sm transition-colors",
+                  "px-3 py-1.5 rounded-sm transition-colors flex items-center justify-center",
                   isActive
                     ? "text-primary bg-primary/10"
                     : "text-muted-foreground hover:text-primary"
                 )}
               >
-                {item.label}
+                {item.icon ? (
+                  <img
+                    src="/favicon.ico"
+                    alt="Home"
+                    className="h-3.5 w-3.5 object-contain"
+                  />
+                ) : (
+                  item.label
+                )}
               </Link>
             </li>
           );
