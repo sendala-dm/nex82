@@ -70,28 +70,30 @@ const AssetClassSection = () => {
           ))}
         </div>
 
-        {/* Scroll indicator */}
-        <motion.button
-          type="button"
-          onClick={() =>
-            window.scrollBy({ top: window.innerHeight, behavior: "smooth" })
-          }
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y: [0, 8, 0] }}
-          viewport={{ once: true }}
-          transition={{
-            opacity: { delay: 0.8, duration: 0.8 },
-            y: { delay: 0.8, duration: 1.8, repeat: Infinity, ease: "easeInOut" },
-          }}
-          aria-label="Scroll to next section"
-          className="mt-16 flex flex-col items-center gap-1.5 md:gap-2 group mx-auto w-fit"
-        >
-          <span className="font-mono text-[10px] md:text-xs tracking-[0.3em] text-muted-foreground group-hover:text-primary transition-colors">
-            SCROLL
-          </span>
-          <div className="w-px h-6 md:h-12 bg-gradient-to-b from-primary/60 to-transparent" />
-          <ChevronDown className="h-4 w-4 md:h-5 md:w-5 text-primary animate-pulse-glow" />
-        </motion.button>
+        {/* Scroll indicator — centered wrapper */}
+        <div className="mt-16 flex justify-center">
+          <motion.button
+            type="button"
+            onClick={() =>
+              window.scrollBy({ top: window.innerHeight, behavior: "smooth" })
+            }
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [0, 8, 0] }}
+            viewport={{ once: true }}
+            transition={{
+              opacity: { delay: 0.8, duration: 0.8 },
+              y: { delay: 0.8, duration: 1.8, repeat: Infinity, ease: "easeInOut" },
+            }}
+            aria-label="Scroll to next section"
+            className="flex flex-col items-center gap-1.5 md:gap-2 group"
+          >
+            <span className="font-mono text-[10px] md:text-xs tracking-[0.3em] text-muted-foreground group-hover:text-primary transition-colors">
+              SCROLL
+            </span>
+            <div className="w-px h-6 md:h-12 bg-gradient-to-b from-primary/60 to-transparent" />
+            <ChevronDown className="h-4 w-4 md:h-5 md:w-5 text-primary animate-pulse-glow" />
+          </motion.button>
+        </div>
       </div>
     </section>
   );
