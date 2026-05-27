@@ -46,26 +46,6 @@ const HardwareSection = () => {
       <div className="absolute inset-0 grid-pattern opacity-10" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16 max-w-2xl"
-        >
-          <p className="font-mono text-sm text-primary mb-3 tracking-widest uppercase">
-            Infrastructure
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            Hardware at the <span className="gradient-text">Speed of Physics</span>
-          </h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Minimising hardware latency is an arms race against physics itself. We
-            colocate with the venues we trade, run custom-designed servers, and push
-            every network standard to its limit.
-          </p>
-        </motion.div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, i) => (
             <motion.div
