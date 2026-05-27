@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import TopNav from "@/components/TopNav";
 import FooterSection from "@/components/FooterSection";
@@ -13,10 +13,10 @@ const Contact = () => {
     canonicalPath: "/contact",
   });
 
-  useState(() => {
+  useEffect(() => {
     const parts = ["info", "@", "nex", "82", ".", "com"];
     setEmail(parts.join(""));
-  });
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
