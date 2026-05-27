@@ -38,6 +38,9 @@ const Software = () => {
               </span>
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
             </div>
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-center mb-6 text-foreground">
+              Software <span className="gradient-text">First</span>
+            </h1>
           </motion.div>
 
           <motion.div
@@ -61,9 +64,9 @@ const Software = () => {
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="h-px w-8 bg-primary/40" />
-              <span className="font-mono text-xs tracking-[0.25em] uppercase text-muted-foreground">
+              <h2 className="font-mono text-xs tracking-[0.25em] uppercase text-muted-foreground">
                 Stack
-              </span>
+              </h2>
               <div className="h-px flex-1 bg-gradient-to-r from-primary/40 to-transparent" />
             </div>
 

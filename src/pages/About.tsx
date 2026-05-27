@@ -36,6 +36,9 @@ const About = () => {
               </span>
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
             </div>
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-center mb-6 text-foreground">
+              Our <span className="gradient-text">History</span>
+            </h1>
 
           </motion.div>
 
@@ -69,9 +72,9 @@ const About = () => {
                 <div className="absolute top-0 left-6 -translate-y-1/2 px-2 py-0.5 bg-background border border-primary/30 rounded-sm">
                   <span className="font-mono text-xs text-primary font-medium">{m.year}</span>
                 </div>
-                <h3 className="font-mono text-sm font-semibold text-foreground tracking-wide mb-2 mt-1">
+                <h2 className="font-mono text-sm font-semibold text-foreground tracking-wide mb-2 mt-1">
                   {m.label}
-                </h3>
+                </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {m.desc}
                 </p>

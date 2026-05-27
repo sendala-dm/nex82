@@ -29,7 +29,7 @@ const FooterSection = () => {
             transition={{ delay: 0.1 }}
             className="space-y-4"
           >
-            <h3 className="font-mono text-sm text-primary tracking-widest uppercase mb-4">Contact</h3>
+            <p className="font-mono text-sm text-primary tracking-widest uppercase mb-4">Contact</p>
             <div className="flex items-start gap-3 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" />
               <span>
