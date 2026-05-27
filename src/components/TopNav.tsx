@@ -8,6 +8,7 @@ const navItems = [
   { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
   { label: "Infrastructure", to: "/infrastructure" },
+  { label: "Hardware", to: "/hardware" },
   { label: "Software", to: "/software" },
 ];
 
