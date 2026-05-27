@@ -37,11 +37,6 @@ const About = () => {
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
             </div>
 
-            <h1 className="font-mono text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8">
-              <span className="text-foreground">NEX</span>
-              <span className="text-primary">|</span>
-              <span className="text-foreground">82</span>
-            </h1>
           </motion.div>
 
           <motion.div
