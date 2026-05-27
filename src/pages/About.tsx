@@ -6,7 +6,7 @@ import FooterSection from "@/components/FooterSection";
 const milestones = [
   { year: "2004", label: "Bond Arb", desc: "Began in bond arbitrage — early electronic trading in EU Bund/Bobl/Schatz vs US Treasuries." },
   { year: "2006", label: "HF Bond Arb", desc: "High-frequency latency arbitrage in bond markets, pushing the boundaries of execution speed." },
-  { year: "2009", label: "FX ECN", desc: "Transitioned into FX arbitrage and ECN development — the beginnings of our low-latency world." },
+  { year: "2009", label: "FX ECN", desc: "Transitioned into FX arbitrage and ECN development — low-latency from day one, building on our HF bond arb heritage." },
   { year: "2009–2012", label: "Low Latency Era", desc: "Among the first users of Spread Networks, colocation at Chicago CH1 / CME Aurora, and microwave links." },
   { year: "Today", label: "Global Stack", desc: "25+ years of machine-based algo trading. ECN technology still powering global prime brokers." },
 ];
@@ -47,8 +47,8 @@ const About = () => {
           >
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
               Our history began in 2004 with bond arbitrage — EU Bund/Bobl/Schatz vs US Treasuries.
-              By 2006 we were running high-frequency bond arb, and in 2009 we moved into FX ECNs
-              and the beginnings of our low-latency world.
+              By 2006 we were running high-frequency bond arb, low-latency from the start. In 2009 we moved
+              into FX ECNs, carrying that same execution-speed DNA into a new asset class.
             </p>
           </motion.div>
 
