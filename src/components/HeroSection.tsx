@@ -12,27 +12,27 @@ const HeroSection = () => {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
+        className="absolute inset-0 w-full h-full object-cover opacity-25"
       >
         <source src={heroVideo} type="video/mp4" />
       </video>
 
       {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
 
       {/* Grid pattern */}
-      <div className="absolute inset-0 grid-pattern opacity-20" />
+      <div className="absolute inset-0 grid-pattern opacity-10" />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
+      <div className="relative z-10 container mx-auto px-6 text-center pt-20 md:pt-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           {/* Logo placeholder - user will upload */}
-          <div className="mb-8 flex justify-center">
-            <img src={nexaurLogo} alt="NEX|82" className="h-20 md:h-24 w-auto" />
+          <div className="mb-10 flex justify-center">
+            <img src={nexaurLogo} alt="NEX|82" className="h-16 md:h-20 w-auto" />
           </div>
         </motion.div>
 
@@ -40,33 +40,31 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight mb-6 text-foreground"
         >
-          <span className="text-foreground">Algorithmic</span>
-          <br />
-          <span className="gradient-text text-glow">Intelligence</span>
+          Algorithmic Intelligence
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-light"
+          className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          High-frequency, machine learning-driven automated trading across FX, Energy, 
-          Commodities & Crypto. Proprietary capital. Zero clients. Pure alpha.
+          High-frequency, machine learning-driven automated trading across FX, Energy,
+          Commodities and Crypto. Proprietary capital. Zero clients.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="flex items-center justify-center gap-8 font-mono text-sm text-muted-foreground"
+          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono text-xs md:text-sm text-muted-foreground tracking-[0.2em]"
         >
-          {["FX", "ENERGY", "COMMODITIES", "CRYPTO"].map((asset, i) => (
-            <span key={asset} className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse-glow" style={{ animationDelay: `${i * 0.5}s` }} />
+          {["FX", "ENERGY", "COMMODITIES", "CRYPTO"].map((asset, i, arr) => (
+            <span key={asset} className="flex items-center gap-6">
               {asset}
+              {i < arr.length - 1 && <span className="text-border">·</span>}
             </span>
           ))}
         </motion.div>
