@@ -12,7 +12,8 @@ const HeroSection = () => {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-25 grayscale"
+        className="absolute inset-0 w-full h-full object-cover opacity-25"
+        style={{ filter: "grayscale(100%)", WebkitFilter: "grayscale(100%)" }}
       >
         <source src={heroVideo} type="video/mp4" />
       </video>
