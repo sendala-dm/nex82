@@ -78,7 +78,7 @@ const FooterSection = () => {
                 <span>
                   NEX82 LLC<br />
                   Suite #3574, 447 Broadway, 2nd Floor,<br />
-                  New York, New York 10013, United States
+                  New York, NY 10013, United States
                 </span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
@@ -93,12 +93,9 @@ const FooterSection = () => {
       {/* Bottom bar — full-width separator and content */}
       <div className="w-full h-px bg-border" />
       <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-24 py-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex items-center">
           <p className="text-xs text-muted-foreground font-mono">
             © {new Date().getFullYear()} NEX|82. All rights reserved.
-          </p>
-          <p className="text-xs text-muted-foreground font-mono">
-            New York, NY · United States
           </p>
         </div>
       </div>
