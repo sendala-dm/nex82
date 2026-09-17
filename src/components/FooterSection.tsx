@@ -77,8 +77,8 @@ const FooterSection = () => {
                 <MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" />
                 <span>
                   NEX82 LLC<br />
-                  777 West Putnam Avenue,<br />
-                  Greenwich CT
+                  Suite #3574, 447 Broadway, 2nd Floor,<br />
+                  New York, New York 10013, United States
                 </span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
