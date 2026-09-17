@@ -98,7 +98,7 @@ const FooterSection = () => {
             © {new Date().getFullYear()} NEX|82. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground font-mono">
-            Greenwich, CT · United States
+            New York, NY · United States
           </p>
         </div>
       </div>
