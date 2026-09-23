@@ -7,6 +7,8 @@ const NotFound = () => {
 
   usePageMeta({
     title: "Page Not Found — NEX|82",
+    description: "The page you are looking for does not exist.",
+    noindex: true,
   });
 
   useEffect(() => {
