@@ -1,4 +1,4 @@
 # Roadmap
 
-- [ ] SEO improvements for Google and Bing (titles, descriptions, sitemap, robots, structured data, per-page meta)
-- [ ] Business card design for CEO (needs name + title from user)
+- [x] SEO improvements for Google and Bing
+- [ ] Business card design for CEO (waiting on name + title from user)
