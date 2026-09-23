@@ -29,9 +29,16 @@ function setMetaName(name: string, content: string) {
   meta.setAttribute("content", content);
 }
 
-export function usePageMeta({ title, description, canonicalPath }: PageMetaOptions) {
+export function usePageMeta({ title, description, canonicalPath, noindex }: PageMetaOptions) {
   useEffect(() => {
     document.title = title;
+
+    setMetaName(
+      "robots",
+      noindex
+        ? "noindex, follow"
+        : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    );
 
     setMetaProperty("og:title", title);
     setMetaName("twitter:title", title);
