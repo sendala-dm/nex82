@@ -1,8 +1,8 @@
 # NEX|82
 
-> Proprietary, self-funded algorithmic trading firm. AI-driven strategies across FX, energy, commodities and crypto. 25+ years of machine-based algo trading experience.
+> Proprietary, self-funded algorithmic trading firm. Machine learning-driven strategies across FX, energy, commodities and crypto. 25+ years of machine-based algo trading experience.
 
-NEX|82 (also known as Nexaur) is a proprietary, self-funded high-frequency trading firm with over 25 years of experience in machine-based algorithmic trading. Founded in 2004, the firm began in bond arbitrage before expanding into FX ECNs, energy, commodities and digital assets. The company is entirely independent — no external investors, no clients, no conflicts — deploying proprietary capital with full conviction in its technology.
+NEX|82 is a proprietary, self-funded high-frequency trading firm with over 25 years of experience in machine-based algorithmic trading. Founded in 2004, the firm began in bond arbitrage before expanding into FX ECNs, energy, commodities and digital assets. The company is entirely independent — no external investors, no clients, no conflicts — deploying proprietary capital with full conviction in its technology.
 
 The firm operates a lean team where 99.9% of the business is automated, managing trading and global risk around the clock through a proprietary hardware and software stack built from the ground up.
 

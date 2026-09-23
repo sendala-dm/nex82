@@ -6,6 +6,7 @@ interface PageMetaOptions {
   title: string;
   description?: string;
   canonicalPath?: string;
+  noindex?: boolean;
 }
 
 function setMetaProperty(property: string, content: string) {
