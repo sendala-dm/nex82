@@ -121,7 +121,7 @@ const Infrastructure = () => {
 
         <div className="relative container mx-auto px-6">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-2xl mb-14"
@@ -146,7 +146,7 @@ const Infrastructure = () => {
 
           {/* Map */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
+            initial={false}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.15 }}
             className="relative"
@@ -205,7 +205,7 @@ const Infrastructure = () => {
                   <motion.path
                     key={l.key}
                     d={l.d}
-                    initial={{ pathLength: 0, opacity: 0 }}
+                    initial={false}
                     animate={{ pathLength: 1, opacity: 1 }}
                     transition={{
                       duration: 1.6,
@@ -249,7 +249,7 @@ const Infrastructure = () => {
                         fill="hsl(var(--primary))"
                         stroke="hsl(var(--background))"
                         strokeWidth="1"
-                        initial={{ scale: 0, opacity: 0 }}
+                        initial={false}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ delay: 0.4 + i * 0.08, duration: 0.4 }}
                       />

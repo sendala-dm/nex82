@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail } from "lucide-react";
-import nexaurLogo from "@/assets/nexaur-logo.png";
+const nexaurLogo = "/images/nex82-logo.png";
 import { Link } from "react-router-dom";
 
 const navLinks = [
@@ -14,7 +14,7 @@ const navLinks = [
 
 const FooterSection = () => {
   return (
-    <footer className="relative w-full border-t border-border bg-background">
+    <footer className="visual-footer relative w-full border-t border-border bg-background">
       {/* Top full-width border line */}
       <div className="w-full h-px bg-border" />
 
@@ -22,7 +22,7 @@ const FooterSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16">
           {/* Brand */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="md:col-span-5 lg:col-span-5 flex flex-col gap-6"
@@ -38,7 +38,7 @@ const FooterSection = () => {
 
           {/* Navigation */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.05 }}
@@ -63,7 +63,7 @@ const FooterSection = () => {
 
           {/* Contact */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}

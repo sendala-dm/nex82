@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const BASE_URL = "https://nex82.lovable.app";
+const BASE_URL = "https://nex82.com";
 
 interface PageMetaOptions {
   title: string;
@@ -35,7 +35,7 @@ export function usePageMeta({ title, description, canonicalPath, noindex }: Page
 
     setMetaName(
       "robots",
-      noindex
+      (noindex || !['nex82.com', 'www.nex82.com'].includes(window.location.hostname))
         ? "noindex, follow"
         : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     );

@@ -42,7 +42,7 @@ const features = [
 
 const HardwareSection = () => {
   return (
-    <section className="relative py-16 overflow-hidden">
+    <section className="visual-hardware relative py-16 overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-10" />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -50,7 +50,7 @@ const HardwareSection = () => {
           {features.map((feature, i) => (
             <motion.div
               key={feature.label}
-              initial={{ opacity: 0, y: 30 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}

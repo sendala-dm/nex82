@@ -1,73 +1,36 @@
-# Welcome to your Lovable project
+# NEX82 website
 
-## Project info
+Production website: https://nex82.com/
+Source: https://github.com/sendala-dm/nex82
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+React, TypeScript, Vite and Tailwind. The build pre-renders the seven existing routes with page-specific SEO metadata.
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Local development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Production build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm run build
+npx tsc --noEmit -p tsconfig.app.json
+```
 
-**Use GitHub Codespaces**
+Upload the generated `dist/` directory to the static-site host. Do not serve the development server in production. `deploy/nginx.conf` handles extensionless routes, canonical redirects, caching and genuine 404 responses. Development previews send `noindex`; production HTML and `robots.txt` permit indexing.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Hosting
 
-## What technologies are used for this project?
+The website runs on `nginx-1` in the `nex82` Docker Compose project, behind Nginx Proxy Manager. The static container publishes port **8085**. Port **8091** belongs to the separate client portal and is not the website deployment target.
 
-This project is built with:
+Production Compose configuration: `/srv/nex82/docker-compose.yml`. The active release path is recorded in `/srv/nex82/CURRENT-RELEASE`. Compose mounts that release's `dist/` and `nginx.conf` read-only. Release directories include a source archive, the previous website build and `docker-compose.before.yml` for rollback. Keep host keys and runtime backups outside Git.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+For future deployments, build locally, create a new release directory, stage and validate the files with `deploy/nginx.conf`, then update only the static-site mounts in the existing production Compose file and recreate that service. Validate all seven HTTPS routes, robots/sitemap, favicon delivery and mobile navigation. To roll back, restore the release's `docker-compose.before.yml` and recreate `static-site` using the `nex82` Compose project.
 
-## How can I deploy this project?
+## SEO and branding
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Canonical domain: `https://nex82.com`. The production server redirects `www` to this domain. Titles/descriptions remain specific to each page, and the sitemap lists the original seven URLs. Favicons are provided as a multi-size root ICO, PNG variants and an Apple touch icon. Nginx Proxy Manager has a separate asset cache: an existing favicon cache entry may need refreshing during icon updates. Search engines control when their displayed icons refresh.
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The portal link is `https://client.nex82.com`. Photography is illustrative stock; asset-photo sources are recorded in `public/images/markets/sources.json`. See `DESIGN-REVIEW.md` for the approved presentation changes.

@@ -1,0 +1,20 @@
+{
+  "name": "NEX82",
+  "short_name": "NEX82",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#080c12",
+  "theme_color": "#080c12",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

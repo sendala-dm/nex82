@@ -9,12 +9,12 @@ const stats = [
 
 const TechnologySection = () => {
   return (
-    <section className="relative py-32">
+    <section className="visual-technology relative py-32">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Content */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={false}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -30,14 +30,13 @@ const TechnologySection = () => {
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-lg">
               Self-funded and independent, we deploy our own capital with full 
-              conviction in our technology — no external investors, no clients, 
-              no conflicts. Just pure, systematic alpha generation.
+              conviction in our technology.
             </p>
           </motion.div>
 
           {/* Right: Stats Grid */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={false}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}

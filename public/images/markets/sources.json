@@ -1,0 +1,34 @@
+[
+  {
+    "category": "Foreign exchange",
+    "title": "Financial district after dark",
+    "file": "fx.jpg",
+    "credit": "Nick Fewings / Unsplash",
+    "source": "https://unsplash.com/photos/a-very-tall-building-lit-up-at-night-UClHwRjFjEo",
+    "note": "Layers of illuminated facades; a closer, more atmospheric view of finance."
+  },
+  {
+    "category": "Energy",
+    "title": "Refinery at night",
+    "file": "energy-aerial.jpg",
+    "credit": "Tom Fisk / Pexels",
+    "source": "https://www.pexels.com/photo/oil-refinery-at-night-10407689/",
+    "note": "Real industrial infrastructure and pools of light, with a similar mood to the hero."
+  },
+  {
+    "category": "Commodities",
+    "title": "Steel coils in a warehouse",
+    "file": "steel-1.jpg",
+    "credit": "Morteza Mohammadi / Unsplash",
+    "source": "https://unsplash.com/photos/-kWkoUkFyp0",
+    "note": "Physical materials, strong shapes and natural contrast. My strongest pick of the set."
+  },
+  {
+    "category": "Crypto / digital infrastructure",
+    "title": "Optical fibre close-up",
+    "file": "digital-fibre.jpg",
+    "credit": "Denny Müller / Unsplash",
+    "source": "https://unsplash.com/photos/white-and-blue-light-on-dark-room-JyRTi3LoQnc",
+    "note": "An abstract-looking real photograph; relates to connectivity rather than a coin logo."
+  }
+]

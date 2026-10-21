@@ -7,6 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
+    headers: { "X-Robots-Tag": "noindex, nofollow" },
     port: 8080,
     hmr: {
       overlay: false,

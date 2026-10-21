@@ -22,33 +22,32 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <TopNav />
 
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section className="interior-page relative pt-32 pb-20 md:pt-40 md:pb-28">
+        <div className="relative container mx-auto px-6">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-              <span className="font-mono text-xs tracking-[0.3em] uppercase text-primary">
+            <div className="page-eyebrow flex items-center gap-3 mb-5 font-mono text-[11px] tracking-[0.25em] text-muted-foreground uppercase">
+              <span aria-hidden="true" className="h-px w-8 bg-primary/60" />
+              <span className="text-muted-foreground">
                 About
               </span>
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-center mb-6 text-foreground">
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-left mb-6 text-foreground">
               Our <span className="gradient-text">History</span>
             </h1>
 
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-center mb-16"
+            className="text-left mb-16 max-w-2xl"
           >
-            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+            <p className="text-muted-foreground text-base leading-relaxed">
               Our history began in 2004 with bond arbitrage — EU Bund/Bobl/Schatz vs US Treasuries.
               By 2006 we were running high-frequency bond arb, low-latency from the start. In 2009 we moved
               into FX ECNs, carrying that same execution-speed DNA into a new asset class.
@@ -56,7 +55,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
             className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-20"
@@ -64,7 +63,7 @@ const About = () => {
             {milestones.map((m, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={false}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.45 + i * 0.08 }}
                 className="group relative rounded-lg border border-border/40 bg-card/40 backdrop-blur-sm p-6 hover:border-primary/30 transition-all duration-300"
@@ -83,10 +82,10 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="max-w-3xl mx-auto space-y-8"
+            className="max-w-3xl space-y-8"
           >
             <div className="border-l-2 border-primary/30 pl-6 py-1">
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -111,10 +110,10 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.8 }}
-            className="mt-20 flex items-center justify-center gap-4"
+            className="mt-20 flex items-center justify-start gap-4"
           >
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary/30" />
             <span className="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground">

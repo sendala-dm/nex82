@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "bunx tsx scripts/generate-sitemap.ts",
+    "predev": "node scripts/generate-sitemap.mjs",
     "dev": "vite",
-    "prebuild": "bunx tsx scripts/generate-sitemap.ts",
-    "build": "vite build",
+    "prebuild": "node scripts/generate-sitemap.mjs",
+    "build": "vite build && node scripts/prerender.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",

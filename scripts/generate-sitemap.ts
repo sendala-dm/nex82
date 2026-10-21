@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs";
 import { resolve } from "path";
 
-const BASE_URL = "https://nex82.lovable.app";
+const BASE_URL = "https://nex82.com";
 
 interface SitemapEntry {
   path: string;
