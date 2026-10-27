@@ -97,6 +97,13 @@ const Contact = () => {
               </span>
               <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary/30" />
             </div>
+            <a
+              href="tel:+18559123957"
+              className="font-mono text-sm text-primary hover:text-primary/80 transition-colors"
+              aria-label="Call NEX82 in the United States at +1 855 912 3957"
+            >
+              +1 855 912 3957
+            </a>
             {email && (
               <a
                 href={`mailto:${email}`}

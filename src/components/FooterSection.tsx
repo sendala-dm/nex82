@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Mail } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 const nexaurLogo = "/images/nex82-logo.png";
 import { Link } from "react-router-dom";
 
@@ -80,6 +80,12 @@ const FooterSection = () => {
                   Suite #3574, 447 Broadway, 2nd Floor,<br />
                   New York, NY 10013, United States
                 </span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                <Phone className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
+                <a href="tel:+18559123957" className="hover:text-foreground transition-colors">
+                  +1 855 912 3957
+                </a>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary shrink-0" />
